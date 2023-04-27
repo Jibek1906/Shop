@@ -1,4 +1,4 @@
-package com.candyShop.library.model;
+package com.CandyShop.library.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

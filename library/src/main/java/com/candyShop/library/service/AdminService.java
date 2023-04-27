@@ -1,7 +1,7 @@
-package com.candyShop.library.service;
+package com.CandyShop.library.service;
 
-import com.candyShop.library.dto.AdminDto;
-import com.candyShop.library.model.Admin;
+import com.CandyShop.library.dto.AdminDto;
+import com.CandyShop.library.model.Admin;
 
 public interface AdminService {
     Admin findByUsername(String username);

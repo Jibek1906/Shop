@@ -1,6 +1,6 @@
-package com.candyShop.library.repository;
+package com.CandyShop.library.repository;
 
-import com.candyShop.library.model.Role;
+import com.CandyShop.library.model.Role;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

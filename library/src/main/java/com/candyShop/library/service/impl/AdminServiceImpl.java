@@ -1,10 +1,10 @@
-package com.candyShop.library.service.impl;
+package com.CandyShop.library.service.impl;
 
-import com.candyShop.library.dto.AdminDto;
-import com.candyShop.library.model.Admin;
-import com.candyShop.library.repository.AdminRepository;
-import com.candyShop.library.repository.RoleRepository;
-import com.candyShop.library.service.AdminService;
+import com.CandyShop.library.dto.AdminDto;
+import com.CandyShop.library.model.Admin;
+import com.CandyShop.library.repository.AdminRepository;
+import com.CandyShop.library.repository.RoleRepository;
+import com.CandyShop.library.service.AdminService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

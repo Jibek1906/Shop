@@ -1,4 +1,4 @@
-package com.candyShop. library.dto;
+package com.CandyShop.library.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

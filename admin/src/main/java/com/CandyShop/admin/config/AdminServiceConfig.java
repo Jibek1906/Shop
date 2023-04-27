@@ -1,7 +1,7 @@
 package com.CandyShop.admin.config;
 
-import com.candyShop.library.model.Admin;
-import com.candyShop.library.repository.AdminRepository;
+import com.CandyShop.library.model.Admin;
+import com.CandyShop.library.repository.AdminRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.User;

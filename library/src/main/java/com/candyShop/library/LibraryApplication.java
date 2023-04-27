@@ -1,4 +1,4 @@
-package com.candyShop.library;
+package com.CandyShop.library;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

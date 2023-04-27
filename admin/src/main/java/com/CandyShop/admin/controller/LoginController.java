@@ -1,12 +1,9 @@
 package com.CandyShop.admin.controller;
 
-import com.candyShop.library.dto.AdminDto;
-import com.candyShop.library.model.Admin;
-import com.candyShop.library.service.impl.AdminServiceImpl;
+import com.CandyShop.library.dto.AdminDto;
+import com.CandyShop.library.model.Admin;
+import com.CandyShop.library.service.impl.AdminServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.authentication.AnonymousAuthenticationToken;
-import org.springframework.security.core.Authentication;
-import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -35,10 +32,6 @@ public class LoginController {
     @RequestMapping("/index")
     public String home(Model model){
         model.addAttribute("title", "Home Page");
-        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
-        if(authentication == null || authentication instanceof  AnonymousAuthenticationToken){
-            return "redirect:/login";
-        }
         return "index";
     }
 
@@ -48,6 +41,13 @@ public class LoginController {
         model.addAttribute("adminDto", new AdminDto());
         return "register";
     }
+
+    @GetMapping("/forgot-password")
+    public String forgotPassword(Model model){
+        model.addAttribute("title", "Forgot Password");
+        return "forgot-password";
+    }
+
     @PostMapping("/register-new")
     public String addNewAdmin(@Valid @ModelAttribute("adminDto")AdminDto adminDto,
                               BindingResult result,
@@ -64,25 +64,25 @@ public class LoginController {
             Admin admin = adminService.findByUsername(username);
             if(admin != null){
                 model.addAttribute("adminDto", adminDto);
-                System.out.println("admin is present");
-                model.addAttribute("emailError", "Your email address has been saved.");
+                System.out.println("admin not null");
+                model.addAttribute("emailError", "Your email has been registered!");
                 return "register";
             }
             if(adminDto.getPassword().equals(adminDto.getRepeatPassword())){
                 adminDto.setPassword(passwordEncoder.encode(adminDto.getPassword()));
                 adminService.save(adminDto);
                 System.out.println("success");
-                model.addAttribute("success", "Successful registration.");
+                model.addAttribute("success", "Register successfully!");
                 model.addAttribute("adminDto", adminDto);
             }else{
                 model.addAttribute("adminDto", adminDto);
-                model.addAttribute("passwordError", "Your password  wrong");
+                model.addAttribute("passwordError", "Your password maybe wrong! Check again!");
                 System.out.println("password not same");
                 return "register";
             }
         }catch (Exception e){
             e.printStackTrace();
-            model.addAttribute("errors", "The server is in error");
+            model.addAttribute("errors", "The server has been wrong!");
         }
         return "register";
 
