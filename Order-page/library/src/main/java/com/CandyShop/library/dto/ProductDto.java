@@ -1,6 +1,6 @@
 package com.CandyShop.library.dto;
 
-import com.CandyShop. library.model.Category;
+import com.CandyShop.library.model.Category;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

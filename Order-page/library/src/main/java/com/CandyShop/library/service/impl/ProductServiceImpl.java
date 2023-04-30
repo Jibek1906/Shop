@@ -133,16 +133,15 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public Page<Product> pageProducts(int pageNo) {
-        Pageable pageable = PageRequest.of(pageNo, 5);
+        Pageable pageable = PageRequest.of(pageNo, 20);
         Page<Product> productPages = productRepository.pageProduct(pageable);
         return productPages;
     }
 
     @Override
     public Page<Product> searchProducts(int pageNo, String keyword) {
-        Pageable pageable = PageRequest.of(pageNo, 5);
+        Pageable pageable = PageRequest.of(pageNo, 20);
         Page<Product> products = productRepository.searchProducts(keyword, pageable);
         return products;
     }
-
 }
