@@ -52,6 +52,10 @@
             <td th:text = "${product.costPrice}"></td>
             <td th:text = "${product.currentQuantity}"></td><td><img src="" style="height: 40px; width: 40px;" th:src="'data:image/jpeg;base64,' + ${product.image}" alt="Product image" /></td>
             <td><a th:href="@{/update-product/{id} (id = ${product.id})}" class="btn btn-primary">Update</a></td>
+            <td>
+              <a th:if = "${product.activated == false}" th:href="@{/enable-product/{id} (id = ${product.id})}" class="btn btn-warning">Enable</a>
+              <a th:if = "${product.deleted == false}" th:href = "@{/delete-product/{id} (id = ${product.id})}" class="btn btn-danger">Delete</a>
+            </td>
           </tr>
           </tbody>
         </table>
@@ -80,6 +84,6 @@
 <!-- Bootstrap core JavaScript-->
 <div th:replace="fragments :: script"></div>
 <script th:src="@{/js/categories.js}"></script>
-</body>
+</body >
 
 </html>

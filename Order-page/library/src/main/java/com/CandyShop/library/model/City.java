@@ -6,14 +6,15 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
-@Data @NoArgsConstructor @AllArgsConstructor
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
 @Entity
-@Table(name = "roles")
-public class Role {
+@Table(name = "cities")
+public class City {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "role_id")
+    @Column(name = "city_id")
     private Long id;
-
     private String name;
 }
