@@ -20,7 +20,7 @@ public class CustomerDto {
 
     private String username;
 
-    @Size(min = 5, max = 20, message = "Password should have 5-10 characters")
+    @Size(min = 5, max = 20, message = "Password should have 5-20 characters")
     private String password;
 
     private String repeatPassword;

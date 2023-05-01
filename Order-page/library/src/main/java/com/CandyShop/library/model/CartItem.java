@@ -1,12 +1,11 @@
 package com.CandyShop.library.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.*;
 
-@Data
+@Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
@@ -18,9 +17,10 @@ public class CartItem {
     private Long id;
     private int quantity;
     private double totalPrice;
-    private double unitPrice;
 
-    @ManyToOne(fetch = FetchType.EAGER)
+    private int unit_price;
+
+    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinColumn(name = "shopping_cart_id", referencedColumnName = "shopping_cart_id")
     private ShoppingCart cart;
 
