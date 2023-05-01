@@ -1,5 +1,6 @@
 package com.CandyShop.library.service.impl;
 
+import com.CandyShop.library.dto.CategoryDto;
 import com.CandyShop.library.model.Category;
 import com.CandyShop.library.repository.CategoryRepository;
 import com.CandyShop.library.service.CategoryService;
@@ -62,5 +63,10 @@ public class CategoryServiceImpl implements CategoryService {
     @Override
     public List<Category> findAllByActivated() {
         return repo.findAllByActivated();
+    }
+
+    @Override
+    public List<CategoryDto> getCategoryAndProduct() {
+        return repo.getCategoryAndProduct();
     }
 }

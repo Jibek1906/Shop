@@ -25,6 +25,7 @@ public class ProductServiceImpl implements ProductService {
     @Autowired
     private ImageUpload imageUpload;
 
+    /*Admin*/
     @Override
     public List<ProductDto> findAll() {
         List<Product> products = productRepository.findAll();
@@ -120,7 +121,7 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public Page<ProductDto> pageProducts(int pageNo) {
-        Pageable pageable = PageRequest.of(pageNo, 20);
+        Pageable pageable = PageRequest.of(pageNo, 5);
         List<ProductDto> products = transfer(productRepository.findAll());
         Page<ProductDto> productPages = toPage(products, pageable);
         return productPages;
@@ -128,11 +129,13 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public Page<ProductDto> searchProducts(int pageNo, String keyword) {
-        Pageable pageable = PageRequest.of(pageNo, 20);
+        Pageable pageable = PageRequest.of(pageNo, 5);
         List<ProductDto> productDtoList = transfer(productRepository.searchProductsList(keyword));
         Page<ProductDto> products = toPage(productDtoList, pageable);
         return products;
     }
+
+
 
     private Page toPage(List<ProductDto> list , Pageable pageable){
         if(pageable.getOffset() >= list.size()){
@@ -164,6 +167,34 @@ public class ProductServiceImpl implements ProductService {
             productDtoList.add(productDto);
         }
         return productDtoList;
+    }
+
+
+    /*Customer*/
+
+    @Override
+    public List<Product> getAllProducts() {
+        return productRepository.getAllProducts();
+    }
+
+    @Override
+    public List<Product> listViewProducts() {
+        return productRepository.listViewProducts();
+    }
+
+    @Override
+    public Product getProductById(Long id) {
+        return productRepository.getById(id);
+    }
+
+    @Override
+    public List<Product> getRelatedProducts(Long categoryId) {
+        return productRepository.getRelatedProducts(categoryId);
+    }
+
+    @Override
+    public List<Product> getProductsInCategory(Long categoryId) {
+        return productRepository.getProductsInCategory(categoryId);
     }
 
 }

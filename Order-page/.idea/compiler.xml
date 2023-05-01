@@ -8,12 +8,14 @@
         <outputRelativeToContentRoot value="true" />
         <module name="admin" />
         <module name="library" />
+        <module name="Customer" />
         <module name="customer" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Customer" options="-parameters" />
       <module name="admin" options="-parameters" />
       <module name="customer" options="-parameters" />
       <module name="library" options="-parameters" />
