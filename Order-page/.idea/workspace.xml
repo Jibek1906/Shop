@@ -15,9 +15,9 @@
       <list>
         <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -69,7 +69,7 @@
       <recent name="$PROJECT_DIR$/admin/src/main/resources/templates" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.AdminApplication">
+  <component name="RunManager" selected="Spring Boot.CustomerApplication (1)">
     <configuration name="AdminApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.CandyShop.admin.AdminApplication" />
       <module name="admin" />
@@ -173,7 +173,7 @@
       <workItem from="1682885080035" duration="3548000" />
       <workItem from="1682934007899" duration="1501000" />
       <workItem from="1682935922652" duration="104000" />
-      <workItem from="1682936448212" duration="10038000" />
+      <workItem from="1682936448212" duration="16107000" />
     </task>
     <servers />
   </component>
