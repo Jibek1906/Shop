@@ -4,40 +4,31 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <!-- Mobile Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Site Metas -->
     <title>Menu</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <!-- Site Icons -->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
-    <!-- Site CSS -->
+
     <link rel="stylesheet" th:href="@{/css/style.css}">
-    <!-- Responsive CSS -->
+
     <link rel="stylesheet" th:href="@{/css/responsive.css}">
-    <!-- Custom CSS -->
+
     <link rel="stylesheet" th:href="@{/css/custom.css}">
 </head>
 <body>
-<!-- Start Main Top -->
+
 <div class="main-top" th:fragment="main-top">
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                 <div class="our-link">
-                    <ul>
-                        <li><a href="#"> Call US : +84967631186</a></li>
-                        <li><a href="#"><i class="fas fa-location-arrow"></i> Address: Km9, Nguyen Trai, Thanh Xuan, Ha
-                            Noi</a></li>
-                    </ul>
                 </div>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -49,48 +40,16 @@
                         <option value="http://localhost:8020/shop/register" >Sign Up</option>
                     </select>
                 </div>
-                <div class="text-slid-box">
-                    <div id="offer-box" class="carouselTicker">
-                        <ul class="offer-box">
-                            <li>
-                                <i class="fab fa-opencart"></i> Off 5% for new members
-                            </li>
-                            <li>
-                                <i class="fab fa-opencart"></i> Freeship
-                            </li>
-                            <li>
-                                <i class="fab fa-opencart"></i> 10% off Entire Purchase Promo code: OceanPrime
-                            </li>
-                            <li>
-                                <i class="fab fa-opencart"></i> Off upto 10%! Shop Now
-                            </li>
-                            <li>
-                                <i class="fab fa-opencart"></i> Off 5% for new members
-                            </li>
-                            <li>
-                                <i class="fab fa-opencart"></i> Freeship
-                            </li>
-                            <li>
-                                <i class="fab fa-opencart"></i> 10% off Entire Purchase Promo code: OceanPrime
-                            </li>
-                            <li>
-                                <i class="fab fa-opencart"></i> Off 10%! Shop Now
-                            </li>
-                        </ul>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
 </div>
-<!-- End Main Top -->
 
-<!-- Start Main Top -->
 <header class="main-header" th:fragment="main-header">
-    <!-- Start Navigation -->
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-default bootsnav">
         <div class="container">
-            <!-- Start Header Navigation -->
+
             <div class="navbar-header">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu"
                         aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
@@ -98,19 +57,16 @@
                 </button>
                 <h1>LeShamile</h1>
             </div>
-            <!-- End Header Navigation -->
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="navbar-menu">
                 <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
                     <li class="nav-item active"><a class="nav-link" th:href="@{/home}">Home</a></li>
                     <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
                         <li class="nav-item"><a class="nav-link" th:href="@{/}">About Us</a></li>
                     </ul>
+                    <li class="nav-item"><a class="nav-link" th:href="@{/order}">Order</a></li>
             </div>
-            <!-- /.navbar-collapse -->
 
-            <!-- Start Atribute Navigation -->
             <div class="attr-nav2">
                 <ul>
                     <li class="side-menu">
@@ -121,38 +77,9 @@
                     </li>
                 </ul>
             </div>
-            <!-- End Atribute Navigation -->
+
         </div>
-        <!-- Start Side Menu -->
-        <div class="side">
-            <a href="#" class="close-side"><i class="fa fa-times"></i></a>
-            <li class="cart-box">
-                <ul class="cart-list">
-                    <li>
-                        <a href="#" class="photo"><img th:src="@{/images/Lobster 02 - Lobster rolls.jpg}" class="cart-thumb"
-                                                       alt=""/></a>
-                        <h6><a href="#">Lobster rolls </a></h6>
-                        <p>1 - <span class="price">$80.00</span></p>
-                    </li>
-                    <li>
-                        <a href="#" class="photo"><img th:src="@{/images/Octopus 05 - Octopus with Black Bean Pear Sauce.jpg}"
-                                                       class="cart-thumb" alt=""/></a>
-                        <h6><a href="#">Octopus with Black Bean</a></h6>
-                        <p>1 - <span class="price">$60.00</span></p>
-                    </li>
-                    <li>
-                        <a href="#" class="photo"><img th:src="@{/images/Crab 02 - Crab Toast.jpg}" class="cart-thumb" alt=""/></a>
-                        <h6><a href="#">Crab Toast</a></h6>
-                        <p>1 - <span class="price">$40.00</span></p>
-                    </li>
-                    <li class="total">
-                        <a href="cart.html" class="btn btn-default hvr-hover btn-cart">VIEW CART</a>
-                        <span class="float-right"><strong>Total</strong>: $180.00</span>
-                    </li>
-                </ul>
-            </li>
-        </div>
-        <!-- End Side Menu -->
+
     </nav>
     <!-- End Navigation -->
 </header>
@@ -167,9 +94,7 @@
         </div>
     </div>
 </div>
-<!-- End Top Search -->
 
-<!-- Start Slider -->
 <div class="all-title-box" th:fragment="slider">
     <div class="container">
         <div class="row">
@@ -183,9 +108,7 @@
         </div>
     </div>
 </div>
-<!-- End Slider -->
 
-<!-- Start Footer  -->
 <footer th:fragment="footer">
     <div class="footer-main">
         <div class="container">
@@ -217,15 +140,16 @@
     </div>
 </footer>
 <div th:fragment="script">
-    <!-- ALL JS FILES -->
+
+<div th:fragment="script">
     <script th:src="@{/js/jquery-3.2.1.min.js}"></script>
     <script th:src="@{/js/popper.min.js}"></script>
     <script th:src="@{/js/bootstrap.min.js}"></script>
-    <!-- ALL PLUGINS -->
+
     <script th:src="@{/js/jquery.superslides.min.js}"></script>
     <script th:src="@{/js/bootstrap-select.js}"></script>
     <script th:src="@{/js/inewsticker.js}"></script>
-    <script th:src="@{/js/bootsnav.js}"></script>
+    <script th:src="@{/js/bootsnav.js.}"></script>
     <script th:src="@{/js/images-loded.min.js}"></script>
     <script th:src="@{/js/isotope.min.js}"></script>
     <script th:src="@{/js/owl.carousel.min.js}"></script>

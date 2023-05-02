@@ -46,7 +46,7 @@
                 <div class="col-xl-7 col-lg-7 col-md-6">
                     <div class="single-product-details">
                         <h2 th:text="${productDetail.name}"></h2>
-                        <h5 th:text="'$' + ${productDetail.costPrice}"></h5>
+                        <h5 th:text="${productDetail.costPrice} + 'c'"></h5>
                         <h4>Short Description:</h4>
                         <p th:text="${productDetail.description}"> </p>
                         <div class="price-box-bar">

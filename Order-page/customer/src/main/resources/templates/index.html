@@ -5,25 +5,14 @@
 <head>
     <div th:replace="fragments :: head"></div>
 
-    <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
 
 </head>
 
 <body>
-<!-- Start Main Top -->
 <header th:replace="fragments::main-header"></header>
-<!-- End Main Top -->
 
-<!-- Start Top Search -->
-<div th:replace="fragments::top-search">
-</div>
-<!-- End Top Search -->
-
-
-<!-- Start Products  -->
 <div class="products-box">
     <div class="container" th:each="category : ${categories}">
         <div class="row">
@@ -43,18 +32,13 @@
                         <div class="box-img-hover">
                             <img th:src="*{'data:image/jpeg;base64,' + {product.image}}" class="img-fluid" alt="Image">
                             <div class="mask-icon">
-                                <ul>
-                                    <li><a th:href="@{/product-detail/{id}(id = ${product.id})}" data-toggle="tooltip"
-                                           data-placement="right"
-                                           title="View"><i class="fas fa-eye"></i></a></li>
-                                </ul>
                                 <input type = "hidden" th:value = "${product.id}" name = "id" class = "form-control">
                                 <input type="submit" class="cart" value="Add to cart">
                             </div>
                         </div>
                         <div class="why-text">
                             <h4 th:text="${product.name}"></h4>
-                            <h5 th:text="'$' + ${product.costPrice}"></h5>
+                            <h5 th:text="${product.costPrice} + 'с'"></h5>
                         </div>
                     </div>
                 </form>
@@ -64,7 +48,6 @@
 </div>
 
 
-<!-- Start Footer  -->
 <footer th:replace="fragments::footer">
 
 </footer>

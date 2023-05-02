@@ -47,7 +47,7 @@
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/admin/Downloads/Shop-main/Order-page/customer/src/main/resources/templates",
+    "last_opened_file_path": "/Users/admin/Downloads/Shop-main-2/Order-page/customer/src/main/resources/templates",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -55,21 +55,23 @@
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
-    "spring.configuration.checksum": "811c22eb737ec18e74b52ecc3d93b8d4",
+    "spring.configuration.checksum": "7725a163e42a7653ce4e92a00f1eccbd",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/customer/src/main/resources/templates" />
-      <recent name="$PROJECT_DIR$/customer/src/main/java/com/CandyShop/customer" />
-      <recent name="$PROJECT_DIR$/admin/src/main/resources/templates" />
+      <recent name="$PROJECT_DIR$/library/src/main/java/com/CandyShop/library/service/impl" />
+      <recent name="$PROJECT_DIR$/library/src/main/java/com/CandyShop/library/repository" />
+      <recent name="$PROJECT_DIR$/library/src/main/java/com/CandyShop/library/service" />
+      <recent name="$PROJECT_DIR$/customer/src/main/java/com/CandyShop/customer/controller" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/admin/src/main/resources/templates" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.CustomerApplication (1)">
+  <component name="RunManager" selected="Spring Boot.AdminApplication">
     <configuration name="AdminApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.CandyShop.admin.AdminApplication" />
       <module name="admin" />
@@ -124,6 +126,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LibraryApplication (2)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="Library" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ecommerce.library.LibraryApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LibraryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="library" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.candyShop.library.LibraryApplication" />
@@ -174,6 +183,7 @@
       <workItem from="1682934007899" duration="1501000" />
       <workItem from="1682935922652" duration="104000" />
       <workItem from="1682936448212" duration="24842000" />
+      <workItem from="1683051982395" duration="11232000" />
     </task>
     <servers />
   </component>
