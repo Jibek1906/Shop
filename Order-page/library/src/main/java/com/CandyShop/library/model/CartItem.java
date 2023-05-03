@@ -27,4 +27,5 @@ public class CartItem {
     @OneToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "product_id", referencedColumnName = "product_id")
     private Product product;
+
 }
