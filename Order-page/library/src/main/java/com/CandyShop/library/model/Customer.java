@@ -29,6 +29,14 @@ public class Customer {
     private String country;
     @Column(name = "phone_number")
     private String phoneNumber;
+
+    public String getPhoneNumber() {
+        if (phoneNumber != null) {
+            return phoneNumber;
+        } else {
+            return "";
+        }
+    }
     private String address;
 
     private String password;
@@ -38,6 +46,7 @@ public class Customer {
 
     @Column(name = "city")
     private String city;
+
 
     @OneToOne(mappedBy = "customer")
     private ShoppingCart shoppingCart;

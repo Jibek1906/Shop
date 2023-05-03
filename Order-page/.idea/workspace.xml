@@ -42,37 +42,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/admin/Downloads/Shop-main-2/Order-page",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Problems",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "spring.configuration.checksum": "0e60001b83e80773ec74f53839400057",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/admin/Downloads/Shop-main-3/Order-page&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;e7f9ac9395c1c973697c8cbb962d856e&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/customer/src/main/resources/static" />
+      <recent name="$PROJECT_DIR$/customer/src/main/resources/static/images" />
       <recent name="$PROJECT_DIR$/admin/src/main/resources/templates" />
       <recent name="$PROJECT_DIR$/customer/src/main/resources/templates" />
       <recent name="$PROJECT_DIR$/library/src/main/java/com/CandyShop/library/service/impl" />
-      <recent name="$PROJECT_DIR$/library/src/main/java/com/CandyShop/library/repository" />
-      <recent name="$PROJECT_DIR$/library/src/main/java/com/CandyShop/library/service" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/customer/src/main/resources/static/images" />
+      <recent name="$PROJECT_DIR$/customer/src/main/resources" />
+      <recent name="$PROJECT_DIR$/customer/src/main/resources/static" />
       <recent name="$PROJECT_DIR$/customer/src/main/resources/img" />
-      <recent name="$PROJECT_DIR$/admin/src/main/resources" />
-      <recent name="$PROJECT_DIR$/admin/src/main/resources/templates" />
+      <recent name="$PROJECT_DIR$/customer/src/main/resources/templates" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.CustomerApplication (1)">
@@ -209,22 +212,16 @@
       <workItem from="1683051982395" duration="12507000" />
       <workItem from="1683107162044" duration="926000" />
       <workItem from="1683110499876" duration="1081000" />
+      <workItem from="1683122686658" duration="5930000" />
+      <workItem from="1683129350205" duration="74000" />
+      <workItem from="1683129436033" duration="178000" />
+      <workItem from="1683129619046" duration="160000" />
+      <workItem from="1683129894560" duration="302000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/customer/src/main/java/com/CandyShop/customer/CustomerApplication.java</url>
-          <line>10</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -37,7 +37,8 @@ public class HomeController {
             Customer customer = customerService.findByUsername(principal.getName());
             ShoppingCart cart = customer.getShoppingCart();
             session.setAttribute("totalItems", cart.getTotalItems());
-        }else{
+        }
+        else{
             session.removeAttribute("username");
         }
         return "home";

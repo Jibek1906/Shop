@@ -15,6 +15,7 @@
             justify-content: center;
             height: 100%;
             margin-top: 50px;
+            text-align: center;
         }
 
         input {
@@ -80,10 +81,14 @@
         #register-form {
             margin-bottom: -50px;
             text-align: center;
-            height: 580px;
+            height: 730px;
             background-color: #2c9faf;
             border-radius: 20px;
             width: 400px;
+        }
+
+        img {
+            margin-top: 40px;
         }
 
     </style>
@@ -92,10 +97,11 @@
 
 <section id="register-form">
     <div class="reg">
+        <img src="images/logo.PNG" height="60px" width="300px">
         <div class="form">
 
             <div class="text-center">
-                <h1>Login Page</h1>
+                <h1>Registration</h1>
             </div>
             <div th:if = "${error}" class="text-center alert alert-danger">
                 <p th:text="${error}"></p>
